@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 320px;
+            font-family: Arial, sans-serif;
+            padding: 15px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #url-display {
+            font-size: 11px;
+            color: #666;
+            word-break: break-all;
+            margin-bottom: 10px;
+        }
+
+        #verdict {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #reasons {
+            font-size: 13px;
+            padding-left: 18px;
+        }
+
+        #status {
+            font-style: italic;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Phishing Risk Check</h2>
+    <div id="url-display"></div>
+    <div id="status">This page was already scanned automatically on load.</div>
+    <div id="verdict" style="display:none;"></div>
+    <ul id="reasons"></ul>
+    <script src="popup.js"></script>
+</body>
+
+</html>

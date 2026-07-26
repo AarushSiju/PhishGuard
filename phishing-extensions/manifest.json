@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing & Malicious URL Detector",
+  "version": "1.0",
+  "description": "Automatically flags phishing risk the instant a page loads.",
+  "permissions": ["tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
