@@ -27,7 +27,7 @@ function App() {
     setResults([]);
 
     try {
-      const response = await fetch(const response = await fetch('https://phishguard-4.onrender.com/analyze-batch', {
+        const response = await fetch('https://phishguard-4.onrender.com/analyze-batch', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ urls: urls })
