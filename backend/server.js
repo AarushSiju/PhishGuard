@@ -138,6 +138,7 @@ app.post('/analyze', async function (req, res) {
     });
 });
 
-app.listen(5000, function () {
-    console.log('Server running on http://localhost:5000');
+const port = process.env.PORT || 5000;
+app.listen(port, function () {
+    console.log('Server running on port ' + port);
 });
